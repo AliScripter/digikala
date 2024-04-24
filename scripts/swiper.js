@@ -1,4 +1,4 @@
-import Swiper from 'https://github.com/AliScripter/digikala/tree/master/node_modules/swiper/swiper-bundle.min.mjs';
+//import Swiper from 'https://github.com/AliScripter/digikala/tree/master/node_modules/swiper/swiper-bundle.min.mjs';
 
 //!----------- Story Slider
 const swiper = new Swiper('.mySwiper', {
