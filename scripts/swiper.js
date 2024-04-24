@@ -1,4 +1,4 @@
-import Swiper from '../node_modules/swiper/swiper-bundle.mjs';
+import Swiper from '../node_modules/swiper/swiper-bundle.min.mjs';
 
 //!----------- Story Slider
 const swiper = new Swiper('.mySwiper', {
