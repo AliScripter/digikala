@@ -1,0 +1,267 @@
+@font-face {
+  font-family: vazir;
+  src: url('./fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Vazir.woff')
+    format('woff');
+
+  src: url('./fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Vazir.woff2')
+    format('woff2');
+
+  src: url('./fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Vazir.ttf')
+    format('ttf');
+
+  src: url('./fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Vazir.eot')
+    format('eot');
+
+  /*!---- FARSI DIGITS  */
+
+  src: url('./fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff2')
+    format('woff2');
+  src: url('./fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff')
+    format('woff');
+  src: url('./fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.ttf')
+    format('ttf');
+}
+
+*,
+html {
+  font-family: 'vazir', sans-serif;
+}
+
+/*!---------- SEARCH BOX  */
+.header__top_searchbox {
+  font-family: 'vazir';
+  font-size: 0.7rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-grow: 0;
+  margin: 0 1rem;
+  width: 570px;
+  background-color: #ede7e7;
+  border-radius: 9px;
+  padding: 0 1rem;
+}
+
+/*!-------------- MENU  */
+
+/* .header__menu-right {
+    width: 67%;
+  } */
+
+.header__menu-right li,
+span {
+  font-size: 14px;
+  color: rgb(82, 82, 82);
+}
+
+.header__menu-right li {
+  display: flex;
+  align-items: center;
+  margin: 0 8px;
+  transition: all ease-in-out 0.4s;
+}
+
+.header__menu-right ul i {
+  margin-left: 4px;
+}
+
+.dropdown button {
+  transition: all 0.4s ease-in-out;
+}
+.dropdown button:hover {
+  color: red;
+}
+
+.header__menu-right a:hover span {
+  color: red;
+}
+.header__menu-right a:hover i {
+  color: red;
+}
+
+/* کلاس برای منو */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* کلاس برای دکمه منو */
+.dropbtn {
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.left-sub {
+  transition: all 0.4s ease-in-out;
+  width: max-content;
+  padding: 12px 16px;
+}
+
+/* کلاس برای محتوای منو کشویی */
+.dropdown-content {
+  display: none;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 200px;
+  z-index: 999;
+  border: 1px solid #ddd;
+  box-shadow: 0px 0px 10px #000;
+}
+
+/* نمایش منو کشویی هنگامی که دکمه فشرده می‌شود */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* تنظیمات برای هر لینک داخل منو */
+.dropdown-content .category a {
+  color: #000000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* تنظیمات برای هر زیر منو */
+.dropdown-content .sub-content {
+  display: none;
+  background-color: #ffffff;
+  color: red;
+  padding: 0px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 0px 10px #000;
+}
+
+/* نمایش زیر منو هنگامی که روی دسته بندی کالا کلیک شود */
+.dropdown-content .category:hover .sub-content {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+/* تغییر رنگ پس زمینه و متن لینک هنگام روی آن ها موس می‌رود */
+.dropdown-content .category a:hover {
+  background-color: #f1f1f1;
+  color: red;
+}
+
+/* تغییر موقعیت زیر منوها بر روی دکمه */
+.dropdown-content .category .sub-content {
+  top: 0;
+  left: 100%;
+}
+
+/* تغییر موقعیت زیر منوهای مد و پوشاک به سمت راست */
+.dropdown-content .sub-content {
+  right: 100%;
+  left: auto;
+}
+
+.open {
+  display: block !important;
+}
+
+/*!----------- RESPONSIVE MENU */
+
+.down_menu_container-absolute {
+  display: none;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+  bottom: 0;
+  background: #fefefe;
+
+  hr {
+    border: 1px solid rgb(163, 163, 163);
+  }
+}
+
+.down_menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+  margin: 4px 0;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(82, 82, 82);
+    i {
+      margin: 4px 0;
+    }
+  }
+}
+
+.down_menu a p {
+  text-align: center;
+}
+
+#menuContainer {
+  display: none;
+}
+
+/*!----------- MEDIA  */
+
+@media (max-width: 1083px) {
+  .header__menu-right {
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  #logo,
+  .header__top-left,
+  .header__menu {
+    display: none;
+  }
+  .header__top-right,
+  .header__top_searchbox {
+    width: 100%;
+  }
+  .header__top {
+    margin: 8px 0;
+  }
+  .header__top_searchbox {
+    margin: 0 8px;
+  }
+
+  .down_menu_container-absolute {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  menu {
+    display: none;
+  }
+}
+
+/* تغییرات در CSS */
+
+.dropdown:hover .dropdown-content,
+.responsive .dropdown-content {
+  display: block;
+}
+
+@media screen and (min-width: 1024px) {
+  .dropdown-content {
+    display: none;
+  }
+}
+
+.my_dp {
+  display: block;
+}
+
+@media screen and (min-width: 1024px) {
+  .my_dp {
+    display: none;
+  }
+}

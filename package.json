@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "scripts": {
+    "build": "tailwindcss build -i ./styles/input_tailwind.css -o ./styles/output_tailwind.css --watch"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "sweetalert": "^2.1.2",
+    "swiper": "^11.1.0"
+  }
+}

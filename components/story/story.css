@@ -1,0 +1,49 @@
+@font-face {
+  font-family: vazir;
+  src: url('./fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Vazir.woff')
+    format('woff');
+
+  src: url('./fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Vazir.woff2')
+    format('woff2');
+
+  src: url('./fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Vazir.ttf')
+    format('ttf');
+
+  src: url('./fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Vazir.eot')
+    format('eot');
+
+  /*!---- FARSI DIGITS  */
+
+  src: url('./fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff2')
+    format('woff2');
+  src: url('./fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff')
+    format('woff');
+  src: url('./fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.ttf')
+    format('ttf');
+}
+
+*,
+html {
+  font-family: 'vazir', sans-serif;
+}
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  /* margin: 0 0 0 8px !important; */
+}
+.my_elips {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /*-webkit-line-clamp: 2;*/ /* تعداد خطوط که مایلید نمایش داده شود */
+  -webkit-box-orient: vertical;
+}
+
+.live {
+  position: absolute;
+  top: 80% !important;
+  left: 50%;
+  transform: translateX(-50%);
+  max-height: max-content;
+}

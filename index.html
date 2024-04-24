@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="https://github.com/AliScripter" />
+    <meta
+      name="description"
+      content="My portfolio with Tailwind technology and JS libraries"
+    />
+    <meta
+      name="keywords"
+      content="portfolio ,HTML, CSS, Tailwind ,JavaScript , Front-end Developer , digikala , online shop"
+    />
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./fontawsome-pro/css/all.min.css" />
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" />
+    <link rel="stylesheet" href="./styles/input_tailwind.css" />
+    <link rel="stylesheet" href="./styles/output_tailwind.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <link
+      rel="shortcut icon"
+      href="/images/Site-Icon.png"
+      type="image/x-icon"
+    />
+
+    <!--!---- SWIPER  -->
+
+    <title>فروشگاه اینترنتی دیجی کالا</title>
+  </head>
+  <body>
+    <div class="loader__container flex h-screen items-center justify-center">
+      <div class="loader"></div>
+    </div>
+    <noscript>
+      <p>برای مشاهده این صفحه، لطفاً اسکریپت مرورگر خود را فعال کنید.</p>
+    </noscript>
+
+    <header class="mb-1.5">
+      <div class="h-[60px]" id="title_ads">
+        <a href="#">
+          <img
+            src="./images/ads_title.gif"
+            alt="ads"
+            class="w-full h-full inline-block object-cover"
+          />
+        </a>
+      </div>
+
+      <site-header></site-header>
+    </header>
+
+    <!--!-------- Story Slider -->
+    <div class="swiper mySwiper mb-0" id="story_slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <site-story
+            story_img="./images/froshande-1.jpg"
+            video_src="./video/dron.mp4"
+            live="yes"
+            live_text="زنده"
+            story_text="نسل جدید درون ها"
+          ></site-story>
+        </div>
+        <div class="swiper-slide">
+          <site-story
+            story_img="./images/froshande-2.jpg"
+            video_src="./video/bicycle-25fps.mp4"
+            live="yes"
+            live_text="14:00"
+            story_text="نسل جدید دوچرخه ها"
+          ></site-story>
+        </div>
+        <div class="swiper-slide">
+          <site-story
+            story_img="./images/froshande-3.jpg"
+            video_src="./video/jaro-bot.mp4"
+            live="yes"
+            live_text="فردا"
+            story_text="ربات جاروبرقی"
+          ></site-story>
+        </div>
+        <div class="swiper-slide">
+          <site-story
+            story_img="./images/hamsade.jpeg"
+            video_src="./video/Viper-Of-Tehran-Trailer.mp4"
+            live="no"
+            story_text="عامو از ای به بعد تکراریه"
+          ></site-story>
+        </div>
+        <div class="swiper-slide">
+          <site-story
+            story_img="./images/froshande-4.jpg"
+            video_src="./video/Viper-Of-Tehran-Trailer.mp4"
+            live="no"
+            story_text="لورم ایپسوم متن ساختگی"
+          ></site-story>
+        </div>
+        <div class="swiper-slide">
+          <site-story
+            story_img="./images/froshande-4.jpg"
+            video_src="./video/Viper-Of-Tehran-Trailer.mp4"
+            live="no"
+            story_text="لورم ایپسوم متن ساختگی"
+          ></site-story>
+        </div>
+        <div class="swiper-slide">
+          <site-story
+            story_img="./images/froshande-4.jpg"
+            video_src="./video/Viper-Of-Tehran-Trailer.mp4"
+            live="no"
+            story_text="لورم ایپسوم متن ساختگی"
+          ></site-story>
+        </div>
+        <div class="swiper-slide">
+          <site-story
+            story_img="./images/froshande-4.jpg"
+            video_src="./video/Viper-Of-Tehran-Trailer.mp4"
+            live="no"
+            story_text="لورم ایپسوم متن ساختگی"
+          ></site-story>
+        </div>
+        <div class="swiper-slide">
+          <site-story
+            story_img="./images/froshande-4.jpg"
+            video_src="./video/Viper-Of-Tehran-Trailer.mp4"
+            live="no"
+            story_text="لورم ایپسوم متن ساختگی"
+          ></site-story>
+        </div>
+        <div class="swiper-slide">
+          <site-story
+            story_img="./images/froshande-4.jpg"
+            video_src="./video/Viper-Of-Tehran-Trailer.mp4"
+            live="no"
+            story_text="لورم ایپسوم متن ساختگی"
+          ></site-story>
+        </div>
+        <div class="swiper-slide">
+          <site-story
+            story_img="./images/froshande-4.jpg"
+            video_src="./video/Viper-Of-Tehran-Trailer.mp4"
+            live="no"
+            story_text="لورم ایپسوم متن ساختگی"
+          ></site-story>
+        </div>
+        <div class="swiper-slide">
+          <site-story
+            story_img="./images/froshande-4.jpg"
+            video_src="./video/Viper-Of-Tehran-Trailer.mp4"
+            live="no"
+            story_text="لورم ایپسوم متن ساختگی"
+          ></site-story>
+        </div>
+        <div class="swiper-slide">
+          <site-story
+            story_img="./images/froshande-4.jpg"
+            video_src="./video/Viper-Of-Tehran-Trailer.mp4"
+            live="no"
+            story_text="لورم ایپسوم متن ساختگی"
+          ></site-story>
+        </div>
+        <div class="swiper-slide">
+          <site-story
+            story_img="./images/froshande-4.jpg"
+            video_src="./video/Viper-Of-Tehran-Trailer.mp4"
+            live="no"
+            story_text="لورم ایپسوم متن ساختگی"
+          ></site-story>
+        </div>
+      </div>
+      <!-- <div class="swiper-pagination"></div> -->
+    </div>
+
+    <!-- <div class="stories_container flex items-center justify-around"></div> -->
+
+    <!--!-------- Story Video Player  -->
+    <div class="video_container z-10">
+      <div class="close-xMark">
+        <i class="fa-solid fa-xmark font-bold text-2xl text-red-600"></i>
+      </div>
+      <video
+        src=""
+        controls
+        autoplay
+        loop
+        class="z-10 rounded-2xl max-h-40 max-w-60"
+      ></video>
+    </div>
+
+    <!--!-------- Slider images  -->
+    <div class="swiper top_slider_swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/slide1-top-food.gif" alt="food" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/slide2-top-guys.webp" alt="guys" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/slide3-top-vam.webp" alt="vam" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/slide4-top-koh.webp" alt="koh" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/slide5-top-modem.webp" alt="modem" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/slide6-top-ramezan.webp" alt="ramezan" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/slide7-top-arayeshi.webp" alt="arayeshi" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/slide8-top-barqi.webp" alt="barqi" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/slide9-top-chideman.webp" alt="chideman" />
+        </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!--!------------ Haraj  -->
+    <div
+      class="main_haraj_container w-full lg:py-2 bg-neutral-000 grid grid-cols-4 lg:flex lg:items-start flex-wrap justify-around"
+    >
+      <div class="haraj_item">
+        <img src="./images/main_sm_jet.png" alt="jet" />
+        <p>دیجی کالا جت</p>
+      </div>
+      <div class="haraj_item">
+        <img src="./images/main_sm_digiPay.png" alt="digi Pay" />
+        <p>دیجی پی</p>
+      </div>
+      <div class="haraj_item">
+        <img src="./images/main_sm_style.png" alt="style" />
+        <p>حراج استایل</p>
+      </div>
+      <div class="haraj_item">
+        <img src="./images/main_sm_ramezan.png" alt="ramezan" />
+        <p>حراج ماه رمضان</p>
+      </div>
+      <div class="haraj_item">
+        <img src="./images/main_sm_mobile.png" alt="mobile" />
+        <p>موبایل کارکرده</p>
+      </div>
+      <div class="haraj_item">
+        <img src="./images/main_sm_chek.png" alt="chek" />
+        <p>خرید چکی</p>
+      </div>
+      <div class="haraj_item">
+        <img src="./images/main_sm_game.png" alt="game" />
+        <p>گیم نت</p>
+      </div>
+
+      <div class="haraj_item">
+        <div
+          class="bg-neutral-200 rounded-[50%] flex justify-center items-center text-neutral-400 w-[52px] h-[52px]"
+        >
+          <i class="fa-regular fa-ellipsis"></i>
+        </div>
+        <p>بیشتر</p>
+      </div>
+    </div>
+
+    <!--!--------------- Amazing Slider Swiper  -->
+    <div class="swiper amazing_slider_swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="amazing-slide1 w-[146px]">
+            <img class="mt-1 amazing-slide1-img1" src="./images/Amazings.svg" />
+            <img
+              src="./images/amazing_box.webp"
+              class="w-[145px] h-[115px] object-contain amazing-slide1-img2"
+            />
+            <div class="text-gray-200 flex items-start mb-2 text-base">
+              <span style="margin: 0">مشاهده همه</span>
+              <i class="fa-solid fa-angle-left mr-1"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide mr-1 rounded-tr-xl rounded-br-xl">
+          <img src="./images/amazing_laptop.webp" alt="laptop" />
+          <div class="flex items-center justify-around flex-col w-full">
+            <div class="flex items-center justify-around flex-nowrap w-full">
+              <span class="bg-red-500 rounded-md px-1 text-neutral-200"
+                >10%</span
+              >
+              <span>18,000,000 تومان</span>
+            </div>
+            <div
+              class="flex items-center justify-around flex-nowrap w-full mt-1.5"
+            >
+              <div>
+                <i class="fa-regular fa-circle-plus text-red-600"></i>
+              </div>
+              <del class="text-gray-400 block text-center"
+                >20,000,000 تومان</del
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide mr-1">
+          <img src="./images/amazing_irepad.webp" alt="irepad" />
+          <div class="flex items-center justify-around flex-col w-full">
+            <div class="flex items-center justify-around flex-nowrap w-full">
+              <span class="bg-red-500 rounded-md px-1 text-neutral-200"
+                >10%</span
+              >
+              <span>1,800,000 تومان</span>
+            </div>
+            <div
+              class="flex items-center justify-around flex-nowrap w-full mt-1.5"
+            >
+              <div>
+                <i class="fa-regular fa-circle-plus text-red-600"></i>
+              </div>
+              <del class="text-gray-400 block text-center">2,000,000 تومان</del>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide mr-1">
+          <img src="./images/amazing_handzfree.webp" alt="handzfree" />
+          <div class="flex items-center justify-around flex-col w-full">
+            <div class="flex items-center justify-around flex-nowrap w-full">
+              <span class="bg-red-500 rounded-md px-1 text-neutral-200"
+                >5%</span
+              >
+              <span>332,500 تومان</span>
+            </div>
+            <div
+              class="flex items-center justify-around flex-nowrap w-full mt-1.5"
+            >
+              <div>
+                <i class="fa-regular fa-circle-plus text-red-600"></i>
+              </div>
+              <del class="text-gray-400 block text-center">350,000 تومان</del>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide mr-1">
+          <img src="./images/amazing_mobile.webp" alt="mobile" />
+          <div class="flex items-center justify-around flex-col w-full">
+            <div class="flex items-center justify-around flex-nowrap w-full">
+              <span class="bg-red-500 rounded-md px-1 text-neutral-200"
+                >3%</span
+              >
+              <span>11,640,000 تومان</span>
+            </div>
+            <div
+              class="flex items-center justify-around flex-nowrap w-full mt-1.5"
+            >
+              <div>
+                <i class="fa-regular fa-circle-plus text-red-600"></i>
+              </div>
+              <del class="text-gray-400 block text-center"
+                >12,000,000 تومان</del
+              >
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide mr-1">
+          <img src="./images/amazing_monitor1.webp" alt="monitor1" />
+          <div class="flex items-center justify-around flex-col w-full">
+            <div class="flex items-center justify-around flex-nowrap w-full">
+              <span class="bg-red-500 rounded-md px-1 text-neutral-200"
+                >4%</span
+              >
+              <span>7,200,000 تومان</span>
+            </div>
+            <div
+              class="flex items-center justify-around flex-nowrap w-full mt-1.5"
+            >
+              <div>
+                <i class="fa-regular fa-circle-plus text-red-600"></i>
+              </div>
+              <del class="text-gray-400 block text-center">7,500,000 تومان</del>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide mr-1">
+          <img src="./images/amazing_monitor2.webp" alt="monitor2" />
+          <div class="flex items-center justify-around flex-col w-full">
+            <div class="flex items-center justify-around flex-nowrap w-full">
+              <span class="bg-red-500 rounded-md px-1 text-neutral-200"
+                >4%</span
+              >
+              <span>5,760,000 تومان</span>
+            </div>
+            <div
+              class="flex items-center justify-around flex-nowrap w-full mt-1.5"
+            >
+              <div>
+                <i class="fa-regular fa-circle-plus text-red-600"></i>
+              </div>
+              <del class="text-gray-400 block text-center">6,000,000 تومان</del>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide mr-1">
+          <img src="./images/amazing_aspiker1.webp" alt="aspiker1" />
+          <div class="flex items-center justify-around flex-col w-full">
+            <div class="flex items-center justify-around flex-nowrap w-full">
+              <span class="bg-red-500 rounded-md px-1 text-neutral-200"
+                >10%</span
+              >
+              <span>810,000 تومان</span>
+            </div>
+            <div
+              class="flex items-center justify-around flex-nowrap w-full mt-1.5"
+            >
+              <div>
+                <i class="fa-regular fa-circle-plus text-red-600"></i>
+              </div>
+              <del class="text-gray-400 block text-center">900,000 تومان</del>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide mr-1">
+          <img src="./images/amazing_aspiker2.webp" alt="aspiker2" />
+          <div class="flex items-center justify-around flex-col w-full">
+            <div class="flex items-center justify-around flex-nowrap w-full">
+              <span class="bg-red-500 rounded-md px-1 text-neutral-200"
+                >10%</span
+              >
+              <span>1,170,000 تومان</span>
+            </div>
+            <div
+              class="flex items-center justify-around flex-nowrap w-full mt-1.5"
+            >
+              <div>
+                <i class="fa-regular fa-circle-plus text-red-600"></i>
+              </div>
+              <del class="text-gray-400 block text-center">1,300,000 تومان</del>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide mr-1">
+          <img src="./images/amazing_bokharpaz.webp" alt="bokharpaz" />
+          <div class="flex items-center justify-around flex-col w-full">
+            <div class="flex items-center justify-around flex-nowrap w-full">
+              <span class="bg-red-500 rounded-md px-1 text-neutral-200"
+                >10%</span
+              >
+              <span>3,600,000 تومان</span>
+            </div>
+            <div
+              class="flex items-center justify-around flex-nowrap w-full mt-1.5"
+            >
+              <div>
+                <i class="fa-regular fa-circle-plus text-red-600"></i>
+              </div>
+              <del class="text-gray-400 block text-center">4,000,000 تومان</del>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide mr-1">
+          <img src="./images/amazing_qahve.webp" alt="bokharpaz" />
+          <div class="flex items-center justify-around flex-col w-full">
+            <div class="flex items-center justify-around flex-nowrap w-full">
+              <span class="bg-red-500 rounded-md px-1 text-neutral-200"
+                >10%</span
+              >
+              <span>2,700,000 تومان</span>
+            </div>
+            <div
+              class="flex items-center justify-around flex-nowrap w-full mt-1.5"
+            >
+              <div>
+                <i class="fa-regular fa-circle-plus text-red-600"></i>
+              </div>
+              <del class="text-gray-400 block text-center">3,000,000 تومان</del>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide mr-1">
+          <img src="./images/amazing_rishtrash.webp" alt="rishtrash" />
+          <div class="flex items-center justify-around flex-col w-full">
+            <div class="flex items-center justify-around flex-nowrap w-full">
+              <span class="bg-red-500 rounded-md px-1 text-neutral-200"
+                >10%</span
+              >
+              <span>990,000 تومان</span>
+            </div>
+            <div
+              class="flex items-center justify-around flex-nowrap w-full mt-1.5"
+            >
+              <div>
+                <i class="fa-regular fa-circle-plus text-red-600"></i>
+              </div>
+              <del class="text-gray-400 block text-center">1,100,000 تومان</del>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide mr-1">
+          <img src="./images/amazing_lostr.webp" alt="loster" />
+          <div class="flex items-center justify-around flex-col w-full">
+            <div class="flex items-center justify-around flex-nowrap w-full">
+              <span class="bg-red-500 rounded-md px-1 text-neutral-200"
+                >5%</span
+              >
+              <span>2,280,000 تومان</span>
+            </div>
+            <div
+              class="flex items-center justify-around flex-nowrap w-full mt-1.5"
+            >
+              <div>
+                <i class="fa-regular fa-circle-plus text-red-600"></i>
+              </div>
+              <del class="text-gray-400 block text-center">2,400,000 تومان</del>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide mr-1 rounded-tl-xl rounded-bl-xl">
+          <div class="flex items-center flex-col justify-center">
+            <div class="border-solid border border-blue-600 rounded-[50%]">
+              <i class="fa-light fa-arrow-left text-blue-600"></i>
+            </div>
+            <p class="mt-2">مشاهده همه</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="supermarket-container flex items-center justify-between h-max">
+      <div
+        class="supermarket-right flex items-center justify-between cursor-pointer mr-3 shrink-0"
+      >
+        <img src="./images/market-fresh.webp" alt="box" />
+        <img src="./images/market-super.svg" alt="tet" class="mr-2.5" />
+      </div>
+      <div class="flex items-center justify-between left-parrent pr-3 pb-3">
+        <div class="supermarket-left flex items-center justify-between">
+          <div>
+            <img src="./images/market-1.webp" alt="market-1" />
+            <span
+              class="bg-red-600 text-neutral-200 px-2 py-1 rounded-2xl text-[14px] text-bold"
+              >40%</span
+            >
+          </div>
+          <div>
+            <img src="./images/market-2.webp" alt="market-2" />
+            <span
+              class="bg-red-600 text-neutral-200 px-2 py-1 rounded-2xl text-[14px] text-bold"
+              >40%</span
+            >
+          </div>
+          <div>
+            <img src="./images/market-3.jpg" alt="market-3" />
+            <span
+              class="bg-red-600 text-neutral-200 px-2 py-1 rounded-2xl text-[14px] text-bold"
+              >30%</span
+            >
+          </div>
+          <div>
+            <img src="./images/market-4.webp" alt="market-4" />
+            <span
+              class="bg-red-600 text-neutral-200 px-2 py-1 rounded-2xl text-[14px] text-bold"
+              >45%</span
+            >
+          </div>
+          <div>
+            <img src="./images/market-5.webp" alt="market-5" />
+            <span
+              class="bg-red-600 text-neutral-200 px-2 py-1 rounded-2xl text-[14px] text-bold"
+              >20%</span
+            >
+          </div>
+          <div>
+            <img src="./images/market-6.webp" alt="market-6" />
+            <span
+              class="bg-red-600 text-neutral-200 px-2 py-1 rounded-2xl text-[14px] text-bold"
+              >25%</span
+            >
+          </div>
+        </div>
+        <div class="flex items-center last">
+          <p class="text-xs">بیش از 100 کالا</p>
+          <i class="fa-regular fa-arrow-left mr-3"></i>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="supermarket-baner mx-auto lg:px-2 2xl:px-0 px-2 flex items-center"
+    >
+      <img
+        src="./images/market-b1.webp"
+        alt="market-b1"
+        data-aos="fade-right"
+      />
+      <img src="./images/market-b2.webp" alt="market-b2" data-aos="fade-up" />
+      <img src="./images/market-b3.webp" alt="market-b3" data-aos="fade-down" />
+      <img src="./images/market-b4.webp" alt="market-b4" data-aos="fade-left" />
+    </div>
+
+    <!--!-------------- category_swiper  -->
+    <h3 class="w-full text-center my-2">خرید بر اساس دسته بندی</h3>
+
+    <div class="swiper category_swiper">
+      <div class="swiper-wrapper" id="category_swiper_wrapper">
+        <div class="swiper-slide">
+          <a href="#" class="flex flex-col items-center w-full lg:p-0 lg:mx-0">
+            <img src="./images/category-mobile.png" alt="mobile" />
+            <p class="text-neutral-900 mt-2 text-center ellipsis-2">موبایل</p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="flex flex-col items-center w-full lg:p-0 lg:mx-0">
+            <img src="./images/category-digital.png" alt="digital" />
+            <p class="text-neutral-900 mt-2 text-center ellipsis-2">
+              کالای دیجیتال
+            </p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="flex flex-col items-center w-full lg:p-0 lg:mx-0">
+            <img src="./images/category-home.png" alt="home" />
+            <p class="text-neutral-900 mt-2 text-center ellipsis-2">
+              خانه و آشپزخانه
+            </p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="flex flex-col items-center w-full lg:p-0 lg:mx-0">
+            <img src="./images/category-barqi.png" alt="barqi" />
+            <p class="text-neutral-900 mt-2 text-center ellipsis-2">
+              لوازم خانگی برقی
+            </p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="flex flex-col items-center w-full lg:p-0 lg:mx-0">
+            <img src="./images/category-poshak.png" alt="poshak" />
+            <p class="text-neutral-900 mt-2 text-center ellipsis-2">
+              مد و پوشاک
+            </p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="flex flex-col items-center w-full lg:p-0 lg:mx-0">
+            <img src="./images/category-tala.png" alt="tala" />
+            <p class="text-neutral-900 mt-2 text-center ellipsis-2">
+              ساعت، طلا و جواهرات
+            </p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="flex flex-col items-center w-full lg:p-0 lg:mx-0">
+            <img src="./images/category-zibai.png" alt="zibai" />
+            <p class="text-neutral-900 mt-2 text-center ellipsis-2">
+              زیبایی و سلامت
+            </p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="flex flex-col items-center w-full lg:p-0 lg:mx-0">
+            <img src="./images/category-cart.png" alt="cart" />
+            <p class="text-neutral-900 mt-2 text-center ellipsis-2">
+              کارت هدیه
+            </p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="flex flex-col items-center w-full lg:p-0 lg:mx-0">
+            <img src="./images/category-market.png" alt="market" />
+            <p class="text-neutral-900 mt-2 text-center ellipsis-2">
+              کالاهای سوپرمارکتی
+            </p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="flex flex-col items-center w-full lg:p-0 lg:mx-0">
+            <img src="./images/category-darsi.png" alt="darsi" />
+            <p class="text-neutral-900 mt-2 text-center ellipsis-2">
+              کتاب، لوازم تحریر و هنر
+            </p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="flex flex-col items-center w-full lg:p-0 lg:mx-0">
+            <img src="./images/category-bazi.png" alt="bazi" />
+            <p class="text-neutral-900 mt-2 text-center ellipsis-2">
+              اسباب بازی، کودک و نوزاد
+            </p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="flex flex-col items-center w-full lg:p-0 lg:mx-0">
+            <img src="./images/category-abzar.png" alt="abzar" />
+            <p class="text-neutral-900 mt-2 text-center ellipsis-2">
+              ابزار آلات و تجهیزات
+            </p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="flex flex-col items-center w-full lg:p-0 lg:mx-0">
+            <img src="./images/category-mashin.png" alt="mashin" />
+            <p class="text-neutral-900 mt-2 text-center ellipsis-2">
+              خودرو و موتورسیکلت
+            </p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="flex flex-col items-center w-full lg:p-0 lg:mx-0">
+            <img src="./images/category-safar.png" alt="safar" />
+            <p class="text-neutral-900 mt-2 text-center ellipsis-2">
+              ورزش و سفر
+            </p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="flex flex-col items-center w-full lg:p-0 lg:mx-0">
+            <img src="./images/category-bomi.png" alt="bomi" />
+            <p class="text-neutral-900 mt-2 text-center ellipsis-2">
+              محصولات بومی
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--!----------- Category baners  -->
+    <div
+      class="category-baners flex items-center justify-between mx-auto lg:px-2 2xl:px-0"
+      style="margin-top: 16px"
+    >
+      <div class="w-full flex items-center justify-center" data-aos="zoom-in">
+        <img src="./images/category-baner-rice.webp" alt="rice" />
+      </div>
+      <div class="w-full flex items-center justify-center" data-aos="zoom-in">
+        <img src="./images/category-baner-qahve.webp" alt="qahve" />
+      </div>
+    </div>
+
+    <!--!----------- Pishnahad digikala   -->
+    <h3 class="w-full text-center my-2">پیشنهاد دیجی کالا</h3>
+
+    <div
+      class="pishnahad-container flex overflow-x-auto overflow-y-hidden hide-scrollbar mt-2 mx-3"
+    >
+      <div class="pishnahad-col">
+        <div
+          class="pishnahad-col__item flex flex-col items-center w-max"
+          style="border-radius: 0 16px 0 0"
+        >
+          <div class="rounded-[50%] p-3 bg-neutral-200">
+            <img src="./images/p1.png" alt="pishnahad-1" />
+          </div>
+          <p class="text-[14px] mt-1">گوشی موبایل</p>
+        </div>
+        <div
+          class="pishnahad-col__item flex flex-col items-center w-max"
+          style="border-radius: 0 0 16px 0"
+        >
+          <div class="rounded-[50%] p-3 bg-neutral-200">
+            <img src="./images/p2.webp" alt="pishnahad-2" />
+          </div>
+          <p class="text-[14px] mt-1">هدفون، هدست و...</p>
+        </div>
+      </div>
+
+      <div class="pishnahad-col">
+        <div class="pishnahad-col__item flex flex-col items-center w-max">
+          <div class="rounded-[50%] p-3 bg-neutral-200">
+            <img src="./images/p3-2.png" alt="pishnahad-3-2p3-2.png" />
+          </div>
+          <p class="text-[14px] mt-1">ساعت هوشمند</p>
+        </div>
+        <div class="pishnahad-col__item flex flex-col items-center w-max">
+          <div class="rounded-[50%] p-3 bg-neutral-200">
+            <img src="./images/p4.webp" alt="pishnahad-4" />
+          </div>
+          <p class="text-[14px] mt-1">جوراب مردانه</p>
+        </div>
+      </div>
+
+      <div class="pishnahad-col">
+        <div class="pishnahad-col__item flex flex-col items-center w-max">
+          <div class="rounded-[50%] p-3 bg-neutral-200">
+            <img src="./images/p5.png" alt="pishnahad-5" />
+          </div>
+          <p class="text-[14px] mt-1">کنسول خانگی</p>
+        </div>
+        <div class="pishnahad-col__item flex flex-col items-center w-max">
+          <div class="rounded-[50%] p-3 bg-neutral-200">
+            <img src="./images/p6.webp" alt="pishnahad-6" />
+          </div>
+          <p class="text-[14px] mt-1">اسپیکر</p>
+        </div>
+      </div>
+
+      <div class="pishnahad-col">
+        <div class="pishnahad-col__item flex flex-col items-center w-max">
+          <div class="rounded-[50%] p-3 bg-neutral-200">
+            <img src="./images/p7.png" alt="pishnahad-7" />
+          </div>
+          <p class="text-[14px] mt-1">لپ تاپ و اولترابوک</p>
+        </div>
+        <div class="pishnahad-col__item flex flex-col items-center w-max">
+          <div class="rounded-[50%] p-3 bg-neutral-200">
+            <img src="./images/p8.webp" alt="pishnahad-8" />
+          </div>
+          <p class="text-[14px] mt-1">تبلت</p>
+        </div>
+      </div>
+
+      <div class="pishnahad-col">
+        <div class="pishnahad-col__item flex flex-col items-center w-max">
+          <div class="rounded-[50%] p-3 bg-neutral-200">
+            <img src="./images/p9.webp" alt="pishnahad-9" />
+          </div>
+          <p class="text-[14px] mt-1">جوراب زنانه</p>
+        </div>
+        <div class="pishnahad-col__item flex flex-col items-center w-max">
+          <div class="rounded-[50%] p-3 bg-neutral-200">
+            <img src="./images/p10.webp" alt="pishnahad-10" />
+          </div>
+          <p class="text-[14px] mt-1">تلویزیون</p>
+        </div>
+      </div>
+
+      <div class="pishnahad-col">
+        <div class="pishnahad-col__item flex flex-col items-center w-max">
+          <div class="rounded-[50%] p-3 bg-neutral-200">
+            <img src="./images/p11.png" alt="pishnahad-11" />
+          </div>
+          <p class="text-[14px] mt-1">اصلاح موی صورت</p>
+        </div>
+        <div class="pishnahad-col__item flex flex-col items-center w-max">
+          <div class="rounded-[50%] p-3 bg-neutral-200">
+            <img src="./images/p12.png" alt="pishnahad-12" />
+          </div>
+          <p class="text-[14px] mt-1">سرخ کن</p>
+        </div>
+      </div>
+
+      <div class="pishnahad-col">
+        <div
+          class="pishnahad-col__item flex flex-col items-center w-max pishnahad-col__item_last"
+        >
+          <div class="rounded-[50%] p-3 bg-neutral-200">
+            <img src="./images/p13.png" alt="pishnahad-13" />
+          </div>
+          <p class="text-[14px] mt-1">مکمل ورزشی</p>
+        </div>
+        <div
+          class="pishnahad-col__item flex flex-col items-center w-max pishnahad-col__item_last"
+        >
+          <div class="rounded-[50%] p-3 bg-neutral-200">
+            <img src="./images/p14.png" alt="pishnahad-14" />
+          </div>
+          <p class="text-[14px] mt-1">اسپرسوساز</p>
+        </div>
+      </div>
+    </div>
+
+    <!--!----------- mahbob tarin brand ha   -->
+    <div class="mahbobtarin flex items-center flex-col mb-2 mx-2.5 mt-4">
+      <h3 class="w-full text-center my-2">
+        <i class="fa-solid fa-stars text-yellow-400 text-[24px] ml-0.5"></i>
+        محبوب ترین برندها
+      </h3>
+
+      <div class="swiper container_img">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/brand-1.png" alt="brand-1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/brand-2.png" alt="brand-2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/brand-3.png" alt="brand-3" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/brand-4.png" alt="brand-4" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/brand-5.png" alt="brand-5" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/brand-6.png" alt="brand-6" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/brand-7.jpg" alt="brand-7" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/brand-8.jpg" alt="brand-8" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/brand-9.png" alt="brand-9" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/brand-10.jpg" alt="brand-10" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/brand-11.png" alt="brand-11" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/brand-12.png" alt="brand-12" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/brand-13.jpg" alt="brand-13" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/brand-14.png" alt="brand-14" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/brand-15.png" alt="brand-15" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/brand-16.jpg" alt="brand-16" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/brand-17.png" alt="brand-17" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/brand-18.png" alt="brand-18" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/brand-19.jpg" alt="brand-19" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/brand-20.png" alt="brand-20" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/brand-21.jpg" alt="brand-21" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--!----------- Brands baners - daqiqan shabihe Category baners -->
+    <div
+      class="category-baners flex items-center justify-between mx-auto lg:px-2 2xl:px-0"
+      style="margin-top: 16px"
+    >
+      <div class="w-full flex items-center justify-center" data-aos="fade-up">
+        <img src="./images/brand-baner1.webp" alt="rice" />
+      </div>
+      <div class="w-full flex items-center justify-center" data-aos="fade-down">
+        <img src="./images/brand-baner2.webp" alt="qahve" />
+      </div>
+    </div>
+
+    <div class="magezine mx-2 my-3 text-[16px]">
+      <div class="magezin-text w-full flex justify-between my-3">
+        <span class="mr-2">خواندنی ها</span>
+        <div class="text-blue-500 text-[14px] flex items-center cursor-pointer">
+          <span>مطالب بیشتر دیجی کالا مگ</span>
+          <i class="fa-regular fa-angle-left ml-2 mr-1.5"></i>
+        </div>
+      </div>
+      <div class="magezin-item flex items-center justify-around">
+        <div data-aos="fade-up">
+          <img src="./images/meg-1.jpg" alt="meg-1" />
+          <p>میان رده جذاب سامسونگ</p>
+        </div>
+        <div data-aos="fade-up">
+          <img src="./images/meg-2.jpg" alt="meg-2" />
+          <p>بنچمارک گوشی جدید سامسونگ</p>
+        </div>
+        <div data-aos="fade-up">
+          <img src="./images/meg-3.jpg" alt="meg-3" />
+          <p>اسپیکر جدید سونی</p>
+        </div>
+        <div data-aos="fade-up">
+          <img src="./images/meg-4.jpg" alt="meg-4" />
+          <p>بررسی آنر جدید ؛ باتری فوق‌العاده</p>
+        </div>
+      </div>
+    </div>
+
+    <!--!-------Footer  -->
+    <footer class="mx-4">
+      <button id="upBtn" class="text-green-500">
+        رفتن به بالا
+        <i class="fa-solid fa-angle-up mr-1.5"></i>
+      </button>
+
+      <p>
+        این وبسایت یک نمونه کار برنامه نویسی با طرحی مشابه
+        <a
+          href="https://www.digikala.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-red-500 p-2"
+          >وبسایت دیجی کالا</a
+        >
+        است .
+      </p>
+      <p>
+        ©2024 تمامی حقوق این وبسایت محفوظ و متعلق به
+        <a
+          href="https://github.com/AliScripter"
+          class="text-red-500"
+          style="border-bottom: 2px solid rgb(239, 68, 68)"
+          >مالک</a
+        >
+        است .
+      </p>
+
+      <div class="footer-icons mt-2 py-3">
+        <a
+          href="https://github.com/AliScripter"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-black"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/ali-ahmadi-32a7ba299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-sky-600"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a
+          href="http://t.me/google_chrome"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-blue-600"
+        >
+          <i class="fa-brands fa-telegram"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!--!-------Scripts  -->
+
+    <script src="./node_modules/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <script type="module" src="./scripts/script.js"></script>
+    <script type="module" src="./scripts/swiper.js"></script>
+    <script src="./node_modules/swiper/swiper-bundle.js"></script>
+  </body>
+</html>

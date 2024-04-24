@@ -1,0 +1,720 @@
+@font-face {
+  font-family: vazir;
+  src: url('./fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Vazir.woff')
+    format('woff');
+
+  src: url('./fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Vazir.woff2')
+    format('woff2');
+
+  src: url('./fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Vazir.ttf')
+    format('ttf');
+
+  src: url('./fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Vazir.eot')
+    format('eot');
+
+  /*!---- FARSI DIGITS  */
+
+  src: url('../fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff2')
+    format('woff2');
+  src: url('../fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff')
+    format('woff');
+  src: url('../fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.ttf')
+    format('ttf');
+}
+
+/*!---------------- چون اندازه ها در تیلویند بهم ریخته بود خط زیر اضافه شد */
+/* html {
+  font-size: 16px;
+} */
+
+*,
+html {
+  font-family: vazir, sans-serif;
+}
+
+/*!--------- Loader */
+/* HTML: <div class="loader"></div> */
+
+.loader {
+  width: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  animation: l5 1s infinite linear alternate;
+}
+@keyframes l5 {
+  0% {
+    box-shadow: 20px 0 #000, -20px 0 #0002;
+    background: #000;
+  }
+  33% {
+    box-shadow: 20px 0 #000, -20px 0 #0002;
+    background: #0002;
+  }
+  66% {
+    box-shadow: 20px 0 #0002, -20px 0 #000;
+    background: #0002;
+  }
+  100% {
+    box-shadow: 20px 0 #0002, -20px 0 #000;
+    background: #000;
+  }
+}
+
+/*!--------- NO SCRIPT*/
+noscript {
+  width: 100%;
+  background-color: rgb(220, 38, 38);
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 16px;
+  padding: 10px;
+  border-radius: 16px;
+  z-index: 30;
+  p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  #title_ads {
+    height: 35px;
+  }
+}
+
+/*!-------- CUSTOME SCROLL  */
+/* کاهش قطر اسکرول بار */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* تغییر رنگ اسکرول بار */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(239, 68, 68);
+  border-radius: 10px;
+}
+
+/* تغییر رنگ پس زمینه اسکرول بار */
+::-webkit-scrollbar-track {
+  background-color: #c4c1c1;
+}
+
+/*!----------- Video Story  */
+
+.video_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video_container video {
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  box-shadow: 0 0 16px 8px black;
+}
+
+.close-xMark {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: grey;
+  cursor: pointer;
+
+  border: solid 2px rgb(220, 38, 38);
+  border-radius: 50%;
+  box-shadow: 0 0 16px 8px black;
+  margin-bottom: 12px;
+}
+
+/*?------ Story Slider  */
+.stories_container {
+  margin: 8px 12px;
+}
+
+.mySwiper {
+  height: 160px;
+  margin: 8px 12px;
+  align-items: center;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.top_slider_swiper .swiper-button-next,
+.swiper-button-prev {
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.top_slider_swiper:hover {
+  .swiper-button-next,
+  .swiper-button-prev {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  #story_slider {
+    height: 160px !important;
+    margin: 2px 12px 4px 12px !important;
+  }
+  .top_slider_swiper {
+    margin-top: 0 !important;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .mySwiper .swiper-slide:last-child {
+    margin-left: 4px;
+  }
+}
+
+/*?------ Slider Images Top Main  */
+
+#story_slider {
+  height: 140px !important;
+}
+
+.top_slider_swiper {
+  height: 300px;
+  width: 100%;
+}
+
+.top_slider_swiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 639px) {
+  .top_slider_swiper {
+    height: 200px;
+    width: 100%;
+  }
+
+  .top_slider_swiper .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .top_slider_swiper img {
+    object-fit: cover;
+    object-position: 69% 50%;
+  }
+  #story_slider {
+    height: 130px !important;
+  }
+}
+
+/*!------- haraj icons   */
+
+.haraj_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin: 6px 0;
+}
+
+.haraj_item p {
+  font-size: 12px;
+  text-align: center;
+  color: rgb(64 64 64);
+  margin: 8px 0;
+}
+
+.main_haraj_container img {
+  width: 52px;
+  height: 52px;
+}
+
+/*!--------- Amazing Slider   */
+.amazing_slider_swiper .amazing-slide1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.amazing_slider_swiper {
+  background: rgb(239, 68, 68);
+  margin: 0 12px;
+  padding: 0 12px;
+  border-radius: 16px;
+  border-right: 3px solid rgb(239, 68, 68);
+  border-left: 3px solid rgb(239, 68, 68);
+}
+.amazing_slider_swiper:not(:first-child) {
+  span {
+    margin-left: 8px;
+    padding: 0 10px;
+    text-align: center;
+    border-radius: 16px;
+  }
+}
+.amazing_slider_swiper .swiper-slide {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 12px;
+  width: max-content !important;
+  height: 100% !important;
+}
+.amazing_slider_swiper .swiper-slide:not(:first-child) {
+  background-color: #fefefe;
+}
+.amazing_slider_swiper .swiper-slide img {
+  width: 100%;
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+
+.amazing_slider_swiper .swiper-wrapper {
+  min-height: 235px;
+  max-height: max-content;
+  align-items: center;
+  background: rgb(239, 68, 68);
+}
+
+.amazing_slider_swiper .amazing-slide1 {
+  width: 146px;
+
+  .amazing-slide1-img1 {
+    width: 92px;
+    height: 77px;
+  }
+
+  .amazing-slide1-img2 {
+    width: 145px;
+    height: 115px;
+  }
+}
+
+.amazing_slider_swiper del {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .amazing_slider_swiper {
+    border-radius: 0;
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .amazing_slider_swiper span:not(:last-child) {
+    font-size: 16px;
+  }
+  .amazing_slider_swiper p {
+    font-size: 16px;
+  }
+  .amazing_slider_swiper del {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .amazing_slider_swiper .amazing-slide1 {
+    width: 100% !important;
+  }
+}
+
+.amazing_slider_swiper .swiper-slide .border-solid {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.amazing_slider_swiper .swiper-wrapper .swiper-slide:last-child {
+  height: 226px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*!--------- Super market Baners    */
+.supermarket-container {
+  background: url('../images/freshPattern.svg');
+  background-color: rgb(229, 229, 229);
+  object-fit: contain;
+  background-repeat: no-repeat;
+  margin: 16px 8px;
+  border-radius: 16px;
+  padding: 12px 0;
+
+  width: -webkit-fill-available;
+  overflow: hidden;
+}
+/*!----- super market animation for help AOS JS */
+@media only screen and (max-width: 1024px) {
+  .supermarket-baner img {
+    animation-name: fade;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.supermarket-container .supermarket-left div {
+  width: 74px;
+  height: 74px;
+  margin-left: 12px;
+  cursor: pointer;
+  span {
+    position: relative;
+    bottom: 20px;
+    left: 15px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+
+.supermarket-container .last {
+  margin-left: 16px;
+  cursor: pointer;
+  color: rgb(34 197 94);
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 16px;
+}
+
+@media only screen and (max-width: 1060px) {
+  .supermarket-left div:first-child {
+    display: none;
+  }
+}
+@media only screen and (max-width: 975px) {
+  .supermarket-left div:nth-child(2) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .supermarket-left div:nth-child(3) {
+    display: none;
+  }
+  .supermarket-container {
+    display: flex;
+    flex-direction: column;
+
+    .left-parrent {
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 8px;
+    }
+    .supermarket-right {
+      width: 100%;
+      justify-content: start;
+    }
+    .supermarket-right img:first-child {
+      width: 40px;
+      height: 40px;
+    }
+    .supermarket-right img:last-child {
+      height: 20px;
+    }
+    .supermarket-left {
+      margin-right: 12px;
+    }
+  }
+}
+@media only screen and (max-width: 420px) {
+  .supermarket-container .last {
+    margin-left: 8px;
+
+    p {
+      display: none;
+    }
+
+    i {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+/*!--------------------- Super market baners*/
+.supermarket-baner img {
+  cursor: pointer;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.supermarket-baner img:not(:last-child) {
+  margin-left: 12px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .supermarket-baner {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    img {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+/*!-------------- category   */
+/*!---- age centeredSlides: 1 ro dar swiper.js mosavi 0 gozashti in style ha ye zir ro az comment dar biar */
+/*
+#category_swiper_wrapper {
+  width: 100% !important;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.category_swiper {
+  max-width: max-content !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}*/
+
+/* #category_swiper_wrapper {
+  gap: 16px 0;
+} */
+
+/*!----- age mikhaye sade zir ham bashan on axs ha ye daste bandi block zir ro comment con */
+#category_swiper_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category_swiper img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.category_swiper p {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* #category_swiper_wrapper {
+    gap: 12px 8px;
+    box-sizing: content-box;
+  } */
+
+  #category_swiper_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .category_swiper p {
+    margin: 0;
+  }
+
+  .category_swiper .swiper-slide {
+    margin: 4px 12px;
+  }
+}
+
+/*!------------ category baners images  */
+.category-baners {
+  /* box-sizing: border-box; */
+  /* width: 96%; */
+  margin: 10px 0;
+}
+
+.category-baners img {
+  border-radius: 16px;
+  object-fit: cover;
+  width: calc(100% - 8px);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .category-baners img {
+    width: calc(100% - 16px);
+  }
+  .category-baners {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .category-baners div {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .category-baners div:last-child {
+    margin-top: 12px;
+  }
+}
+
+/*!------------------ Pishnahad digikala*/
+.pishnahad-container {
+  scrollbar-width: none;
+  justify-content: space-between;
+}
+
+.pishnahad-container .pishnahad-col img {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  object-fit: cover;
+}
+.pishnahad-col__item {
+  border: 1px solid rgb(163, 163, 163);
+  padding: 8px;
+  cursor: pointer;
+  width: -webkit-fill-available;
+}
+
+.pishnahad-col p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.pishnahad-col {
+  border-spacing: 0;
+  border-collapse: collapse;
+  /* width: -webkit-fill-available; */
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.pishnahad-col__item:first-child {
+  border-bottom: none !important;
+}
+.pishnahad-col__item {
+  border-left: none !important;
+}
+
+.pishnahad-col__item_last {
+  border: 1px solid rgb(163, 163, 163) !important;
+}
+.pishnahad-col__item_last:first-child {
+  border-radius: 16px 0 0 0 !important;
+}
+.pishnahad-col__item_last:last-child {
+  border-radius: 0 0 0 16px !important;
+}
+
+/*!-------------- mahbobtarin ha digikala */
+.mahbobtarin {
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 16px;
+  scrollbar-width: 0;
+}
+
+.mahbobtarin img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  background-color: transparent !important;
+}
+
+.mahbobtarin .container_img div {
+  /* padding: 0 6px; */
+  padding: 6px 10px;
+  flex-shrink: 0;
+}
+.mahbobtarin .swiper .swiper-slide {
+  width: auto;
+}
+.mahbobtarin .swiper .swiper-slide {
+  overflow-x: hidden !important;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .mahbobtarin img {
+    width: 90px;
+    height: 90px;
+  }
+  .mahbobtarin .container_img {
+    width: 100% !important;
+  }
+}
+
+/*!-------------- magazine digikala */
+.magezin-item {
+  margin-bottom: 16px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px;
+    overflow: hidden;
+    border: 1px solid rgb(115, 115, 115);
+    border-radius: 12px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+  }
+
+  p {
+    text-align: start;
+    padding: 8px;
+    width: 100%;
+  }
+}
+
+.magezin-item img {
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 1024px) {
+  .magezin-item {
+    flex-direction: column !important;
+  }
+  .magezin-item div {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/*!-------------- Footer*/
+footer {
+  line-height: 32px;
+  text-align: right;
+  padding-top: 8px;
+  border-top: 1px solid rgb(163, 163, 163);
+}
+
+footer a {
+  padding: 8px;
+}
+
+footer .footer-icons a {
+  font-size: 32px;
+}
+
+@media only screen and (max-width: 1024px) {
+  footer {
+    margin-bottom: 70px;
+  }
+}
